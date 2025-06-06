@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas de Filtro</title>
+    <link rel="stylesheet" href="resources/styles.css">
+</head>
+
+<body>
+
+    <h1>Etiquetas de Filtro</h1>
+
+    <div id="tag-filters">
+        <button class="tag" data-tag="red">Red</button>
+        <button class="tag" data-tag="blue">Blue</button>
+        <button class="tag" data-tag="large">Large</button>
+        <button class="tag" data-tag="small">Small</button>
+    </div>
+
+    <div id="items">
+        <div class="item" data-tags="red,large">
+            <img class = "image-row" src = "resources/Lutjanus_buccanella_SI.jpg"></img>
+        </div>
+        <div class="item" data-tags="blue,small">
+            <img class = "image-row" src = "resources/Anchovy_closeup.jpg"></img>
+        </div>
+        <div class="item" data-tags="red,small">
+            <img class = "image-row" src = "resources/Vermilion_snapper.jpg"></img>
+        </div>
+        <div class="item" data-tags="blue,large">
+            <img class = "image-row" src = "resources/Pomatomus_saltatrix.png"></img>
+        </div>
+    </div>
+
+    <script src="javascript/tagFilter.js"></script>
+
+</body>
