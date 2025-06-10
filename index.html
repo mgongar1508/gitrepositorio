@@ -19,19 +19,26 @@
 
     <div id="items">
         <div class="item" data-tags="red,large">
-            <img class = "image-row" src = "resources/Lutjanus_buccanella_SI.jpg"></img>
+            <img class = "image-row popup-image" src = "resources/Lutjanus_buccanella_SI.jpg" onclick="openLightbox(this.src)"></img>
         </div>
         <div class="item" data-tags="blue,small">
-            <img class = "image-row" src = "resources/Anchovy_closeup.jpg"></img>
+            <img class = "image-row popup-image" src = "resources/Anchovy_closeup.jpg" onclick="openLightbox(this.src)"></img>
         </div>
         <div class="item" data-tags="red,small">
-            <img class = "image-row" src = "resources/Vermilion_snapper.jpg"></img>
+            <img class = "image-row popup-image" src = "resources/Vermilion_snapper.jpg" onclick="openLightbox(this.src)"></img>
         </div>
         <div class="item" data-tags="blue,large">
-            <img class = "image-row" src = "resources/Pomatomus_saltatrix.png"></img>
+            <img class = "image-row popup-image" src = "resources/Pomatomus_saltatrix.png" onclick="openLightbox(this.src)"></img>
         </div>
     </div>
 
+    <div id="lightbox" class="lightbox-modal" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="">
+    </div>
+
+
     <script src="javascript/tagFilter.js"></script>
+    <script src="javascript/imagePopUp.js"></script>
 
 </body>
